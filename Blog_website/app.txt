@@ -1,0 +1,20 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const filepath = path.join(__dirname);
+
+console.log(filepath);
+app.get('/', (req, res)=>{
+    res.send('hello reader');
+})
+
+app.get('/home', (req, res)=>{
+    res.sendFile(`${filepath}/home.html`);
+})
+
+app.get('/post', (req, res)=>{
+    res.sendFile(`${filepath}/post.html`);
+})
+
+app.listen(3000);
+console.log('server is running...');

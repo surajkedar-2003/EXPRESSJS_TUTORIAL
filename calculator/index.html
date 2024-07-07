@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <table>
+            <tr>
+                <td>Enter first no: </td>
+                <td><input type="text" name="fno" id="fno"></td>
+            </tr>
+            <tr>
+                <td>enter second No: </td>
+                <td><input type="text" name="sno"></td>
+            </tr>
+            <tr>
+                <td>Select operator:</td>
+                <td><select name="operator" id="optr">
+                    <option value="addition">+</option>
+                    <option value="subtraction">-</option>
+                    <option value="multiplication">*</option>
+                    <option value="division">/</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
