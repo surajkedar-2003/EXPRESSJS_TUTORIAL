@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+</head>
+<body>
+    <%- include('../partials/header')%>
+    <h1>this is courses page</h1>
+    <ul>
+        <%data.forEach((items)=>{ %>
+            <li>
+                <h2><%= items.cname %></h2>
+                <p><%= items.id%></p>
+                <p><%= items.duration%></p>
+                <p><%= items.fees%></p>
+            </li>
+
+        <% }) %>
+        
+    </ul>
+    <%- include('../partials/footer')%>
+</body>
+</html>
