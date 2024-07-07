@@ -36,6 +36,8 @@ const courses = [
     }
 ]
 
+//add the courses page 
+
 app.get('/courses', (req, res)=>{
     res.render('pages/course', {data:courses})
 })
