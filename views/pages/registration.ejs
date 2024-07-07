@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        firstname :<input type="text" name="firstname">
+        <br><br>
+        Lastname : <input type="text" name="lastname">
+        <br><br>
+        Age: <input type="text" name="age">
+        <br><br>
+        Address: <input type="textbox" name="address">
+        <br><br>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="hobbies" value="drawing" id="drawing">
+            <label for="painting">Painting</label>
+            <input type="checkbox" name="hobbies" value="painting" id="painting">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" name = "hobbies" id="traveling" value="traveling">
+        </fieldset>
+<br>
+        City: <input list="city" name="city">
+        <datalist id="city">
+            <option value="Amravati">Amravati</option>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+        </datalist>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
