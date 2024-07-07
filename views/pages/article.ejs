@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h1>Articles</h1>
+    <ul>
+        <%data.forEach((items)=>{ %>
+            <li>
+                <h3><%= items.title%></h3>
+                <p><%= items.content%></p>
+                <p><%= items.author%></p>
+                <p><%= items.pubyear%></p>
+            </li>
+        <% })%>
+    </ul>
+    <%- include('../partials/footer') %>
+</body>
+</html>
