@@ -59,7 +59,7 @@ app.put("/update/:id", async(req, res)=>{
     try{
         const upd = await StudentModel.findByIdAndUpdate(req.params.id, req.body, {new:true});
     }catch(err){
-        res.status(404).send({message:"student not found"});
+        res.status(404).send({message:"student data not found"});
     }
 })
 app.listen(3000);
