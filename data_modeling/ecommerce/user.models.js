@@ -47,5 +47,5 @@ const userSchema = new mongoose.Schema({
 
 
 //model("name store to database", "on which basis - create model")
-//              ^=>this parameter always goes into database in all lowercase letters
+//              |--> this parameter always goes into database in all lowercase letters
 export const User = mongoose.model('User', userSchema);
